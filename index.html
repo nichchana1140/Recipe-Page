@@ -1,0 +1,256 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+*{
+margin: 0;
+font-family: sans-serif;
+padding: 0;
+}
+
+body{
+    margin: 50px;
+background-color:rgb(234, 202, 218);
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.container{
+  
+    max-width: 700px;
+    width: 100%;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 50px;
+    padding: 80px 0 80px 80px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+
+}
+.container img{
+height: 300px;
+width: 600px;
+border-radius: 50px;
+background: no-repeat center;
+transition: transform 0.5s ease ;
+}
+.container img:hover{
+transform: scale(1.2);
+cursor: pointer;
+}
+.container h1{
+    transition: 0.5s;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+margin-bottom: 15px;
+margin-top: 10px;
+}
+.container h1:hover{
+color: olive;
+text-shadow: 0 0 10px rgb(186, 242, 201);
+cursor: pointer;
+}
+.easy{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 14px;
+margin-bottom: 60px;
+line-height: 1.5;
+}
+.prep{
+margin-top: 30px;
+padding: 10px 10px 10px 10px;
+background-color: rgb(244, 241, 242);
+width: 600px;
+line-height: 2;
+
+}
+.prep h3{
+    color: rgb(169, 42, 84);
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 19px;
+margin-left: 10px;
+}
+.container ul {
+margin-left: 20px;
+
+}
+.container ul li{
+
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container .prep strong{
+
+font-family: monospace;}
+
+.ingredients{
+    margin-top: 40px;
+}
+.ingredients .title{
+
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color: rgb(216, 160, 179);
+
+}
+.container .ingredients ul li{
+line-height: 2;
+font-family: Arial, Helvetica, sans-serif;
+color: rgb(79, 70, 70);
+}
+.grey{
+border: none;
+color: gray;
+height: 1px;
+margin: 10px 0;
+background-color: hsla(0, 17%, 57%, 0.36);
+}
+.title2{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color: rgb(186, 128, 147);
+margin-bottom: 10px;
+}
+
+.instructions li {
+line-height: 1.6;
+font-family: Arial, Helvetica, sans-serif;
+color: rgb(9, 8, 8);
+margin-left: 20px;
+width: 600px;
+}
+.Nutrition .cal{
+display: flex;
+justify-content: space-between;
+color: rgb(77, 73, 73);
+}
+.Nutrition .weight{
+margin-right: 250px;
+color: brown;
+
+}
+.Nutrition  p {
+    margin-bottom: 10px;
+    margin-top: 30px;
+
+}
+.Nutrition h2{
+
+margin-top: 30px;
+color: brown;
+font-family: monospace;
+}
+
+
+
+#backToTopBtn {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(169, 42, 84);
+  color: white;
+  cursor: pointer;
+  padding: 15px 20px;
+  border-radius: 50%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#backToTopBtn:hover {
+  background-color: rgb(216, 160, 179);
+  transform: scale(1.1);
+}
+
+
+</style>
+</head>
+<body>
+<div  class="container" >
+<img src="bakd-raw-by-karolin-baitinger-SCZP5rvZINk-unsplash.jpg" alt="">
+<h1>Simple Omelette Recipe</h1>
+<pa  class="easy"   >An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats. </p>
+<div  class="prep" >
+<h3>Preparation time</h3>
+<ul>
+<li><strong>Total</strong>:Approximately 10 minutes</li>
+<li><strong>Preparation</strong>:5 minutes </li>
+<li><strong>Cooking</strong>:5 minutes</li>
+</ul>
+</div>
+<div class="ingredients"  >
+<h2  class="title" >Ingredients</h2>
+<ul>
+<li>2-3 large eggs</li>
+<li>Salt, to taste</li>
+<li>Pepper, to taste</li>
+<li>1 tablespoon of butter or oil</li>
+<li>Optional fillings: cheese,diced vegetables, cooked meats,herbs</li>
+</ul>
+<hr class="grey" >
+</div>
+<div     class="instructions"     >
+<h2   class="title2"   >Instructions</h2>
+<ol>
+<li><strong>Beat the eggs</strong>:In a bowl,beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</li>
+<li><strong>Heat the pan</strong>:Place a non-stick frying pan over medium heat and add butter or oil.  </li>
+<li><strong>Cook the omelette</strong>: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</li>
+<li><strong>Add fillings(optional)</strong>:When the eggs begin to set at the edges but are slightly runny in the middle,sprinkle your chosen fillings over one half of the omelette.</li>
+<li><strong>Fold and serve</strong>: As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</li>
+</ol>
+</div>
+<hr class="grey" >
+<div  class="Nutrition"  >
+<h2>Nutrition</h2>
+<p>The Table below shows nutritional values per serving without the additional fillings.</p>
+<div  class="cal"  >
+<span  class="nut" >Calories</span>
+<span  class="weight" >277Kcal</span>
+</div>
+<hr  class="grey" >
+<div  class="cal" >
+<span  class="nut" >Carbs</span>
+<span  class="weight" >0g</span>
+</div>
+<hr  class="grey" >
+<div  class="cal"  >
+<span  class="nut" >Protein</span>
+<span  class="weight" >22g</span>
+</div>
+<hr class="grey" >
+<div class="cal"  >
+<span  class="nut" >Fat</span>
+<span  class="weight" >22g</span>
+</div>
+</div>
+</div>
+
+<button id="backToTopBtn" title="Go to top">↑</button>
+<script>
+
+    const backToTopBtn = document.getElementById("backToTopBtn");
+    
+    window.onscroll = function() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTopBtn.style.display = "block";
+      } else {
+        backToTopBtn.style.display = "none";
+      }
+    };
+    
+    backToTopBtn.addEventListener('click', function() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+    </script>
+    
+
+
+</body>
+</html>
